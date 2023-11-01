@@ -7,6 +7,7 @@ const Phone = () => {
 
   const { id } = useParams();
   const phones = useLoaderData();
+  console.log(phones);
 
   useEffect(() => {
     const findPhone = phones?.find((phone) => phone.id === id);

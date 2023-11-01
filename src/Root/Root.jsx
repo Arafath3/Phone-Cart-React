@@ -13,7 +13,7 @@ const Root = () => {
     if (loc.state) {
       document.title = `${loc.state}`;
     }
-  }, [loc.pathname]);
+  }, [loc.pathname, loc.state]);
   return (
     <div className="max-w-[1300px] mx-auto">
       <Navbar></Navbar>
